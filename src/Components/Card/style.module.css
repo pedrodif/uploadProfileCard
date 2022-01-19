@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  margin: 0;
+  font-family: 'Kumbh Sans';
+}
+
+:root {
+  --color-white-200: #fff;
+  --color-grey-200: rgb(181, 181, 183);
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: #19a1ad;
+  height: 100vh;
+}
+
+.container .card {
+  width: 400px;
+  height: 430px;
+  background-color: var(--color-white-200);
+  border-radius: 15px;
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.container .card .coverImg {
+  width: 400px;
+  z-index: 2;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.container .card .userImg {
+  width: 110px;
+  height: 110px;
+  border: 5px solid var(--color-white-200);
+  border-radius: 50%;
+  z-index: 1;
+  margin-top: -15%;
+}
+
+.container .card .header {
+  margin: 0 auto;
+  width: 190px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .card .header .age {
+  margin-left: 15px;
+  color: var(--color-grey-200);
+  font-size: 19px;
+}
+
+.container .card .city {
+  margin-top: -1px;
+  color: var(--color-grey-200);
+}
+
+.container .card .main {
+  margin-top: 8%;
+  border-top: 0.5px solid var(--color-grey-200);
+}
+
+.container .card .main .mainBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 320px;
+  margin: 0 auto;
+  margin-top: 15px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container .card .main .mainBox .boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 10px;
+}
+
+.container .card .main .mainBox .boxes .boxesText {
+  color: var(--color-grey-200);
+}
+/*# sourceMappingURL=style.module.css.map */
