@@ -13,9 +13,8 @@ import backgImgBottom from "../../assets/imgs/bg-pattern-bottom.svg";
 function Card(){
     return(
         <div className={style.container}>
-            {/* <img src={backgImgTop} alt="Imagem fundo" className={style.backgImgTop} />
-            <img src={backgImgBottom} alt="Imagem fundo" className={style.backgImgBottom} /> */}
-
+            <img src={backgImgTop} alt="Imagem fundo" className={style.backgImgTop} />
+            
             <div className={style.card}>
                 <img src={coverImg} alt="Imagem de Capa" className={style.coverImg}/>
                 <img src={userImg} alt="Foto do Usuário" className={style.userImg} />
@@ -50,6 +49,9 @@ function Card(){
 
                 </div>
             </div>
+
+            <img src={backgImgBottom} alt="Imagem fundo" className={style.backgImgBottom} />
+            
         </div>
     );
 }

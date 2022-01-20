@@ -23,19 +23,24 @@ $background: rgb(25, 161, 173);
     text-align: center;
     background-color: $background;
     height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
 
-    // .backgImgTop{
-    //     margin-left: 20%;
-    //     margin-top: -50%;
-    //     z-index: 2;
-    // }
+    .backgImgTop{
+        // width: 600px;
+        position: relative;
+        margin-left: -15rem;
+        margin-top: -50%;
+        z-index: 1;
+    }
 
-    // .backgImgBottom{
-    //     margin-right: -15%;
-    //     margin-bottom: -50%;
-    //     z-index: 3;
+    .backgImgBottom{
+        position: relative;
+        margin-right: -15rem;
+        margin-bottom: -60%;
+        z-index: 1;
         
-    // }
+    }
 
     .card {
         width: 400px;
@@ -43,11 +48,12 @@ $background: rgb(25, 161, 173);
         background-color: var(--color-white-200);
         border-radius: 15px;
         box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-        z-index: 1;
+        z-index: 2;
+        position: absolute;
 
         .coverImg{
             width: 400px;
-            z-index: 2;
+            z-index: 1;
             border-top-right-radius: 15px;
             border-top-left-radius: 15px;
         }
@@ -57,7 +63,7 @@ $background: rgb(25, 161, 173);
             height: 110px;
             border: 5px solid var(--color-white-200);
             border-radius: 50%;
-            z-index: 1;
+            z-index: 2;
             margin-top: -15%;
         }
 
